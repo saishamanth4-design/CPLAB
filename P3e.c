@@ -1,4 +1,4 @@
-C Program for Relational Operator
+C Program for Logical Operator
 
  #include <stdio.h>
 
@@ -8,14 +8,11 @@ int main() {
     printf("Enter two numbers: ");
     scanf("%d %d", &a, &b);
 
-    printf("\n--- Relational Operations ---\n");
+    printf("\n--- Logical Operations ---\n");
 
-    printf("%d == %d : %d\n", a, b, a == b);  
-    printf("%d != %d : %d\n", a, b, a != b);  
-    printf("%d > %d  : %d\n", a, b, a > b);   
-    printf("%d < %d  : %d\n", a, b, a < b);   
-    printf("%d >= %d : %d\n", a, b, a >= b);  
-    printf("%d <= %d : %d\n", a, b, a <= b);  
+    printf("(a && b)  : %d\n", (a && b));   
+    printf("(a || b)  : %d\n", (a || b));   
+    printf("!(a && b) : %d\n", !(a && b));  
 
     return 0;
 }
